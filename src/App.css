@@ -2,37 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #d1d1d1;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 1.8rem;
+  color: #363636;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-field {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #b3b3b3;
+  font-size: 1rem;
+  transition: border 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field:focus {
+  border: 1px solid #9ba9ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(92, 102, 167, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register-button {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #5549b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #4a4e69;
+}
+
+.error-message {
+  color: #ff1900;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-shadow: 0 0 15px rgb(107, 0, 0);
 }
